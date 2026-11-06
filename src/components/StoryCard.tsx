@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function StoryCard({title,description,image,href,meta}:{title:string;description:string;image:string;href:string;meta:string}){return <article><Link href={href} className="story-image block aspect-[16/10]"><img src={image} alt="" className="image-cover"/></Link><p className="eyebrow mt-4">{meta}</p><h3 className="serif mt-2 text-2xl leading-tight hover:text-[#9D302B]"><Link href={href}>{title}</Link></h3><p className="mt-2 text-sm leading-6 text-[#756E63]">{description}</p></article>}
